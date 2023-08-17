@@ -40,4 +40,3 @@ function mostraPorta() {
 
 app.use(router.get("/mulheres", mostraMulheres))
 app.listen(porta, mostraPorta)
-com
