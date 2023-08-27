@@ -90,6 +90,7 @@ app.use(router.delete('/mulheres/:id', deletaMulher))// configurei rota DELETE /
 //PORTA
 function mostraPorta() {
     console.log("Servidor criado e rodando na porta ", porta)
-} 
+} // Uma função
 
-app.listen(porta, mostraPorta)//Servidor ouvindo a porta
+app.use(router.get("/mulheres", mostraMulheres))
+app.listen(porta, mostraPorta)
